@@ -1,0 +1,1 @@
+﻿index=nightwatch_sysmon | where EventCode=13 | eval registry_path=replace(lower(TargetObject),"\\\\","/") | where like(registry_path,"%/software/microsoft/windows/currentversion/run/%") | table _time host User Image TargetObject Details ProcessGuid | sort - _time

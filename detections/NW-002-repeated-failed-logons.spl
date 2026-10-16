@@ -1,0 +1,1 @@
+﻿index=nightwatch_windows source="XmlWinEventLog:Security" | where EventCode=4625 AND isnotnull(TargetUserName) | bin _time span=5m | stats count AS failed_attempts values(IpAddress) AS source_ips values(LogonType) AS logon_types by _time host TargetDomainName TargetUserName | where failed_attempts>=5

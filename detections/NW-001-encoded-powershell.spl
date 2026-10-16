@@ -1,0 +1,1 @@
+﻿index=nightwatch_sysmon | where EventCode=1 AND match(Image,"(?i)powershell\.exe$") AND match(CommandLine,"(?i)-EncodedCommand\s") | table _time host User Image CommandLine ParentImage ProcessGuid

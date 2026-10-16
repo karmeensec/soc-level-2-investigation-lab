@@ -1,0 +1,14 @@
+﻿Thumbs.db
+Desktop.ini
+*.tmp
+*.log
+.env
+.env.*
+*.pem
+*.key
+*.vdi
+*.vmdk
+*.vhd
+*.vhdx
+*.iso
+*.sav
