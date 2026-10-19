@@ -14,3 +14,18 @@
 - Disposition: Authorized benign test.
 - Limitation: This rule covers wscript.exe → powershell.exe;
   it does not cover other script hosts or indirect launches.
+
+<!-- evidence-gallery -->
+## Evidence screenshots
+
+### script powershell process chain
+
+![script powershell process chain](../evidence/screenshots/case-03/nightwatch-script-powershell-process-chain.png)
+
+### wscript powershell alert triggered
+
+![wscript powershell alert triggered](../evidence/screenshots/case-03/nightwatch-wscript-powershell-alert-triggered.png)
+
+### wscript powershell negative test
+
+![wscript powershell negative test](../evidence/screenshots/case-03/nightwatch-wscript-powershell-negative-test.png)

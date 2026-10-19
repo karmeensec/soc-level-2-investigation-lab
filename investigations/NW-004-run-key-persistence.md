@@ -18,3 +18,18 @@
 - Disposition: Authorized benign persistence simulation.
 - Scope: Current rule covers Run value changes, not RunOnce
   or other persistence mechanisms.
+
+<!-- evidence-gallery -->
+## Evidence screenshots
+
+### run key persistence timeline
+
+![run key persistence timeline](../evidence/screenshots/case-04/nightwatch-run-key-persistence-timeline.png)
+
+### run key alert triggered
+
+![run key alert triggered](../evidence/screenshots/case-04/nightwatch-run-key-alert-triggered.png)
+
+### run key creation removal
+
+![run key creation removal](../evidence/screenshots/case-04/nightwatch-run-key-creation-removal.png)

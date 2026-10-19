@@ -98,3 +98,18 @@ Keep the original CSV alongside the authentication baseline, failures-then-succe
 ## Closure
 
 The tested account-abuse simulation was contained within the verified scope: the domain account was disabled, the startup value was removed, reported remaining processes were stopped, no matching SMB session was found, and the fresh logon test was blocked. The defensible case title is **domain account incident simulation**, rather than confirmed domain-controller compromise.
+
+<!-- evidence-gallery -->
+## Evidence screenshots
+
+### case5 failures then success
+
+![case5 failures then success](../evidence/screenshots/case-05/nightwatch-case5-failures-then-success.png)
+
+### case5 containment evidence
+
+![case5 containment evidence](../evidence/screenshots/case-05/nightwatch-case5-containment-evidence.png)
+
+### case5 disabled account authentication test
+
+![case5 disabled account authentication test](../evidence/screenshots/case-05/nightwatch-case5-disabled-account-authentication-test.png)

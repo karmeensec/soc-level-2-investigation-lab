@@ -1,4 +1,4 @@
-﻿# Detection Rules
+# Detection Rules
 
 ## Shared alert settings
 - Schedule: */5 * * * * (every five minutes)

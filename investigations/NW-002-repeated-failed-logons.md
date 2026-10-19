@@ -16,3 +16,18 @@
   events from relative-time searches.
 - Limitation: Failures split across adjacent five-minute
   buckets may remain below the threshold.
+
+<!-- evidence-gallery -->
+## Evidence screenshots
+
+### repeated failed logons detected
+
+![repeated failed logons detected](../evidence/screenshots/case-02/nightwatch-repeated-failed-logons-detected.png)
+
+### repeated failed logons alert triggered
+
+![repeated failed logons alert triggered](../evidence/screenshots/case-02/nightwatch-repeated-failed-logons-alert-triggered.png)
+
+### failed logons threshold validation
+
+![failed logons threshold validation](../evidence/screenshots/case-02/nightwatch-failed-logons-threshold-validation.png)

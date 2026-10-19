@@ -1,4 +1,4 @@
-﻿# SOC Level 2 Investigation Lab
+# SOC Level 2 Investigation Lab
 A local Windows and Active Directory SOC lab demonstrating detection engineering, investigation, and response using Splunk, Sysmon, and Windows Security logs.
 
 ## Environment
