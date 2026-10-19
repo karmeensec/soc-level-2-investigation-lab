@@ -1,5 +1,4 @@
-﻿# Operation NightWatch
-
+﻿# SOC Level 2 Investigation Lab
 A local Windows and Active Directory SOC lab demonstrating detection engineering, investigation, and response using Splunk, Sysmon, and Windows Security logs.
 
 ## Environment
@@ -70,3 +69,5 @@ The Case 5 export contains 217 selected events. It is a filtered export, not a c
 ## Project Scope
 
 All scenario activity was authorized and performed against a dedicated local lab. Payloads used harmless test output or Notepad. The repository documents the observed results and their limits.
+
+
