@@ -1,9 +1,9 @@
-# NW-005 — Domain Account Incident Simulation
+# NW-005 â€” Domain Account Incident Simulation
 
-**Project:** Operation NightWatch  
+**Project:** SOC Level 2 Investigation Lab  
 **Analyst:** Kamil Ismayilzada  
 **Disposition:** Authorized lab simulation; containment and cleanup validated within the tested scope  
-**Evidence period:** October 14–15, 2026; all timestamps below are UTC
+**Evidence period:** October 14â€“15, 2026; all timestamps below are UTC
 
 ## Executive assessment
 
@@ -31,13 +31,13 @@ Live process and SMB checks were supplied separately by the lab operator. The ex
 | UTC timestamp | Host | Evidence | Interpretation |
 |---|---|---|---|
 | Oct 14 21:25:08.750 | WS01 | 4624 and 4648, Alex supplying credentials for nw-case5 | Baseline successful explicit-credential use |
-| Oct 14 21:26:20–21 | DC01 | 4768/4769 and 4624 from 192.168.56.20 | Baseline domain authentication |
+| Oct 14 21:26:20â€“21 | DC01 | 4768/4769 and 4624 from 192.168.56.20 | Baseline domain authentication |
 | Oct 14 21:31:34.004 | WS01 | 4625; substatus 0xc000006a | Initial wrong-password control |
-| Oct 14 21:36:32.562–21:36:48.758 | WS01 | Five 4625 events for nw-case5 | Repeated-failure test; five events in approximately 16 seconds |
+| Oct 14 21:36:32.562â€“21:36:48.758 | WS01 | Five 4625 events for nw-case5 | Repeated-failure test; five events in approximately 16 seconds |
 | Oct 14 21:36:53.884 | WS01 | 4624 and 4648 | Successful use approximately five seconds after the final failure |
 | Oct 14 21:45:47.648 | WS01 | Sysmon 1, PowerShell with -EncodedCommand, user nw-case5 | Encoded execution confirmed |
 | Oct 15 17:02:40.023 | WS01 | Sysmon 13, Run\NightWatchCase5 | Per-user startup value set to Notepad |
-| Oct 15 17:06:02.437–17:06:02.465 | DC01 | 4768/4769 and 4624 from 192.168.56.20 | Authentication during the operator's SYSVOL access test |
+| Oct 15 17:06:02.437â€“17:06:02.465 | DC01 | 4768/4769 and 4624 from 192.168.56.20 | Authentication during the operator's SYSVOL access test |
 | Oct 15 17:12:25.111 | DC01 | 4725, Administrator targeting nw-case5 | Account disabled |
 | Oct 15 17:13:45.843 | WS01 | Sysmon 12 at the same startup value | Deletion; earlier detailed evidence identifies DeleteValue |
 | Oct 15 18:37:54 | WS01 | Registry activity attributed to nw-case5 processes | Activity persisted after account disablement; separate live checks found remaining processes |
